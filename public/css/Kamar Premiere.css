@@ -1,0 +1,27 @@
+.hero6 {
+    margin-top: 5%;
+    background-image: url("/images/premiere king.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    position: relative;
+    z-index: 0;
+}
+.hero6-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero6-content h1 {
+    font-size: 52px;
+    color: #000;
+}
+.hero6-content span {
+    color: orange;
+}

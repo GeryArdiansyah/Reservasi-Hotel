@@ -1,0 +1,60 @@
+.hero2 {
+    margin-top: 5%;
+    background-image: url("/images/junior suite.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    position: relative;
+    z-index: 0;
+}
+
+.hero2-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero2-content h1 {
+    font-size: 52px;
+    color: #000;
+}
+.hero2-content span {
+    color: orange;
+}
+.container h3 {
+    line-height: 50px;
+    font-size: 25px;
+    color: orange;
+}
+.fasilitas h3{
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+    line-height: 100px;
+}
+.facility {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.facility .fas {
+    width: 300px;
+    text-align: left;
+    margin: 50px;
+}
+.facility .fas p {
+    text-align: left;
+    position: relative;
+    left: -20px;
+    line-height: 50px;
+    font-weight: 10px;
+}
+.facility .fas ul {
+    list-style-type:square;
+    line-height: 20px;
+}

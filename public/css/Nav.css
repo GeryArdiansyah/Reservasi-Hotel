@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background: white;
+}
+
+.navbar ul li a.aktif {
+    background-color: white;
+    color: black;
+}
+
+.navbar ul li a.aktif:hover {
+    color: tomato;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgb(0, 124, 232);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+    height: 70px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 32px;
+    color: white;
+    font-family: 'Inter';
+}
+
+header .navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+    line-height: 30px;
+}
+
+header .navbar ul li a {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 560;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    color: black;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.tepi {
+    border-radius: 19px;
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 30px;
+    background-color: tomato;
+    line-height: 1px;
+    color: black !important;
+}
+
+.tepi:hover {
+    color: white !important;
+}
+
+.tepi.logout {
+    background-color: red;
+}
+
+.tepi.logout:hover {
+    color: white !important;
+}
+
+nav ul li a i {
+    padding-inline: 12px;
+    display: none;
+}
+
+#lo {
+    margin-top: -12px;
+    margin-left: -8px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    header .logo {
+        font-size: 22px;
+        color: white;
+        font-family: 'Inter';
+    }
+
+    header .navbar ul li a {
+        font-size: 14px;
+    }
+
+    header .navbar ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media (max-width: 920px) {
+    header {
+        justify-content: space-around;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    header .logo {
+        font-size: 20px;
+        color: white;
+        font-family: 'Inter';
+    }
+
+    header .navbar ul li a {
+        padding: 12px;
+        font-size: 12px;
+        line-height: 43px;
+    }
+
+    header .navbar ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .tepi {
+        border-radius: 13px;
+        margin-top: 18px;
+        margin-left: 15px;
+        height: 31px;
+        font-size: 12px;
+        background-color: tomato;
+        color: black !important;
+    }
+
+    #bl {
+        line-height: 8px;
+    }
+}
+
+@media (max-width: 740px) {
+    header {
+        justify-content: space-between;
+        padding-left: 30px;
+    }
+
+    header .logo {
+        font-size: 22px;
+        color: white;
+        font-family: 'Inter';
+    }
+
+    nav {
+        z-index: -1;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        margin-top: 70px;
+        border-top: 1px solid black;
+        flex-direction: column;
+        background-color: white;
+        transform: translateY(-140%);
+        transition: all 0.7s;
+    }
+
+    nav ul.slide {
+        transform: translateY(0);
+    }
+
+    nav ul li a i {
+        display: initial;
+    }
+
+    .menu-toggle {
+        display: flex;
+        padding-left: 130px;
+    }
+
+    header .navbar ul li a {
+        padding: 12px;
+        font-size: 12px;
+        line-height: 43px;
+        color: black;
+    }
+
+    header .navbar ul li a:hover {
+        background-color: tomato;
+        color: royalblue;
+    }
+
+    .tepi {
+        border-radius: 0px;
+        margin-top: 14px;
+        margin-left: 0px;
+        height: 31px;
+        font-size: 25px;
+        background-color: tomato;
+        color: black !important;
+    }
+
+    .tepi:hover {
+        color: white !important;
+    }
+}
+
+@media (max-width: 365px) {
+    header {
+        justify-content: space-between;
+        padding-left: 40px;
+    }
+
+    header .logo {
+        font-size: 22px;
+        color: white;
+        font-family: 'Inter';
+    }
+
+    nav ul.slide {
+        transform: translateY(0);
+    }
+
+    nav ul li a i {
+        display: initial;
+    }
+
+    #lo {
+        margin-top: -19.5px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        padding-left: 60px;
+    }
+}
